@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Andy Checking Booking</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
+</head>
+<body>
+<h1>Andy Checking Booking</h1>
+<div id="total-guests-display" class="total-guests">Tổng số khách: 0</div>
+<div class="table-map">
+  <!-- Thêm 30 bàn theo hạng -->
+  <div class="table platinum" data-id="P1" data-x="377" data-y="-3" style="transform: translate(377px, -3px);">P1</div>
+  <div class="table platinum" data-id="P2" data-x="577" data-y="-2" style="transform: translate(577px, -2px);">P2</div>
+  
+
+  <!-- Diamond 16 bàn -->
+  <div class="table diamond" data-id="DA1" data-x="426" data-y="453" style="transform: translate(426px, 453px);">DA1</div>
+  <div class="table diamond" data-id="DA2" data-x="426" data-y="544" style="transform: translate(426px, 544px);">DA2</div>
+  <div class="table diamond" data-id="DA3" data-x="420" data-y="638" style="transform: translate(420px, 638px);">DA3</div>
+  <div class="table diamond" data-id="DA4" data-x="573" data-y="458" style="transform: translate(573px, 458px);">DA4</div>
+  <div class="table diamond" data-id="DA5" data-x="568" data-y="549" style="transform: translate(568px, 549px);">DA5</div>
+  <div class="table diamond" data-id="DA6" data-x="567" data-y="644" style="transform: translate(567px, 644px);">DA6</div>
+
+  <div class="table diamond" data-id="DB1" data-x="923" data-y="-3" style="transform: translate(923px, -3px);">DB1</div>
+  <div class="table diamond" data-id="DB2" data-x="923" data-y="93" style="transform: translate(923px, 93px);">DB2</div>
+  <div class="table diamond" data-id="DB3" data-x="923" data-y="198" style="transform: translate(923px, 198px);">DB3</div>
+  <div class="table diamond" data-id="DB4" data-x="923" data-y="296" style="transform: translate(923px, 296px);">DB4</div>
+  <div class="table diamond" data-id="DB5" data-x="923" data-y="404" style="transform: translate(923px, 404px);">DB5</div>
+  <div class="table diamond" data-id="DB6" data-x="923" data-y="514" style="transform: translate(923px, 514px);">DB6</div>
+  <div class="table diamond" data-id="DB7" data-x="923" data-y="622" style="transform: translate(923px, 622px);">DB7</div>
+
+  <div class="table diamond" data-id="DV1" data-x="4" data-y="981" style="transform: translate(4px, 981px);">DV1</div>
+  <div class="table diamond" data-id="DV2" data-x="4" data-y="1075" style="transform: translate(4px, 1075px);">DV2</div>
+  <div class="table diamond" data-id="DV3" data-x="102" data-y="1077" style="transform: translate(102px, 1077px);">DV3</div>
+  <!-- Gold 10 bàn -->
+  <div class="table gold" data-id="G1" data-x="241" data-y="206" style="transform: translate(241px, 206px);">G1</div>
+  <div class="table gold" data-id="G2" data-x="241" data-y="299" style="transform: translate(241px, 299px);">G2</div>
+  <div class="table gold" data-id="G3" data-x="239" data-y="388" style="transform: translate(239px, 388px);">G3</div>
+  <div class="table gold" data-id="G4" data-x="239" data-y="480" style="transform: translate(239px, 480px);">G4</div>
+  <div class="table gold" data-id="G5" data-x="242" data-y="572" style="transform: translate(242px, 572px);">G5</div>
+  <div class="table gold" data-id="G6" data-x="245" data-y="669" style="transform: translate(245px, 669px);">G6</div>
+  <div class="table gold" data-id="G7" data-x="248" data-y="771" style="transform: translate(248px, 771px);">G7</div>
+  <div class="table gold" data-id="G8" data-x="246" data-y="859" style="transform: translate(246px, 859px);">G8</div>
+  <div class="table gold" data-id="G9" data-x="369" data-y="767" style="transform: translate(369px, 767px);">G9</div>
+  <div class="table gold" data-id="G10" data-x="369" data-y="863" style="transform: translate(369px, 863px);">G10</div>
+  <div class="table gold" data-id="G11" data-x="454" data-y="763" style="transform: translate(454px, 763px);">G11</div>
+  <div class="table gold" data-id="G12" data-x="458" data-y="866" style="transform: translate(458px, 866px);">G12</div>
+  <div class="table gold" data-id="G13" data-x="541" data-y="767" style="transform: translate(541px, 767px);">G13</div>
+  <div class="table gold" data-id="G14" data-x="544" data-y="863" style="transform: translate(544px, 863px);">G14</div>
+  <div class="table gold" data-id="G15" data-x="631" data-y="769" style="transform: translate(631px, 769px);">G15</div>
+  <div class="table gold" data-id="G16" data-x="636" data-y="866" style="transform: translate(636px, 866px);">G16</div>
+  <div class="table gold" data-id="G17" data-x="375" data-y="973" style="transform: translate(375px, 973px);">G17</div>
+  <div class="table gold" data-id="G18" data-x="460" data-y="980" style="transform: translate(460px, 980px);">G18</div>
+  <div class="table gold" data-id="G19" data-x="636" data-y="1088" style="transform: translate(636px, 1088px);">G19</div>
+  <div class="table gold" data-id="G20" data-x="733" data-y="1090" style="transform: translate(733px, 1090px);">G20</div>
+  <div class="table gold" data-id="G21" data-x="896" data-y="841" style="transform: translate(896px, 841px);">G21</div>
+  <div class="table gold" data-id="G22" data-x="923" data-y="1013" style="transform: translate(923px, 1013px);">G22</div>
+  <div class="table gold" data-id="G23" data-x="813" data-y="1200" style="transform: translate(813px, 1200px);">G23</div>
+  <div class="table gold" data-id="G24" data-x="450" data-y="236" style="transform: translate(450px, 236px);">G24</div>
+  <div class="table gold" data-id="G25" data-x="573" data-y="238" style="transform: translate(573px, 238px);">G25</div>
+  <!-- Silver 2 bàn -->
+  <div class="table silver" data-id="S1" data-x="362" data-y="110" style="transform: translate(362px, 110px);">S1</div>
+  <div class="table silver" data-id="S2" data-x="682" data-y="162" style="transform: translate(682px, 162px);">S2</div>
+  <div class="table silver" data-id="S3" data-x="746" data-y="387" style="transform: translate(746px, 387px);">S3</div>
+  <div class="table silver" data-id="S4" data-x="743" data-y="477" style="transform: translate(743px, 477px);">S4</div>
+  <div class="table silver" data-id="S5" data-x="746" data-y="562" style="transform: translate(746px, 562px);">S5</div>
+  <div class="table silver" data-id="S6" data-x="759" data-y="663" style="transform: translate(759px, 663px);">S6</div>
+  <div class="table silver" data-id="S7" data-x="845" data-y="751" style="transform: translate(845px, 751px);">S7</div>
+  <div class="table silver" data-id="S8" data-x="785" data-y="833" style="transform: translate(785px, 833px);">S8</div>
+  <div class="table silver" data-id="S9" data-x="821" data-y="920" style="transform: translate(821px, 920px);">S9</div>
+  <div class="table silver" data-id="S10" data-x="301" data-y="1196" style="transform: translate(301px, 1196px);">S10</div>
+  
+  
+</div>
+
+<!-- Form popup -->
+<div id="booking-form" class="hidden">
+  <h2>Booking Form - <span id="form-table-id"></span></h2>
+  <label>Name:</label><input id="name" type="text"><br>
+  <label>Phone:</label><input id="phone" type="text"><br>
+  <label>Email:</label><input id="email" type="email"><br>
+  <label>Number of Guests:</label>
+  <input id="guests" type="number" min="1" value="1"><br>
+  <button id="save">Save Booking</button>
+  <button id="delete">Cancel Booking</button>
+  <button id="cancel">✖</button>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
+
